@@ -1,0 +1,29 @@
+.map-container {
+    text-align: center;
+    margin-top: 15px;
+    height: 300px;
+}
+
+.map-container img{
+    height: 60%;
+    width: auto;
+    padding-top: 45px
+}
+
+@media (max-width: 800px) {
+    .map-container {
+        height: 100%;
+    }
+
+    .map-container .col-md-4 {
+        height: 100px;
+    }
+
+    .map-container img {
+        height: 100%;
+    }
+}
+
+.tiendas{
+    margin-top: 155px;
+}

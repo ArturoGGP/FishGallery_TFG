@@ -1,0 +1,98 @@
+.card .imagenTarjetaProduct{
+    height:250px;
+    width: 100%;
+    padding: 0px;
+}
+
+.card-img-left{
+    border-radius: 5px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.tarjetaProduct{
+    margin-top: 70px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.card{
+    background-color: #91cbf1;
+}
+
+.button-heart {
+    position: absolute; /* Posicionamiento absoluto para el botón */
+    bottom: 15px;
+    right: 15px;
+    background-color: white; /* Fondo blanco */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-heart{
+    height: 30px;
+}
+
+.top-margin{
+    margin-top: 200px;
+}
+
+.card-body {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card-body h1{
+    color:#003366
+}
+
+.card-title{
+    padding-top: 0px;
+}
+#precio{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #003366; /* Azul oscuro */
+        color: #91cbf1; /* Azul más claro */
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
+        top: 260px;
+        right: 10px;
+        font-size: 40px;
+}
+
+#datos{
+    font-size: 20px;
+    background-color: none;
+}
+
+.card-text{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px;
+    text-align: center;
+    background-color: #003366; 
+    color: #91cbf1;
+    border-radius: 20px;
+}
+
+.sinResults{
+    margin-top: 30px;
+    margin-bottom: 75px;
+}
+
+.looking-for-text{
+    margin-bottom: 400px;
+}

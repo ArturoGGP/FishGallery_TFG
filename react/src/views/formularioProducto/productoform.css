@@ -1,0 +1,23 @@
+h2{
+    padding: 15px;
+}
+
+.form-contenedor{
+    background-color: #ced4da;
+    border: 1px solid #ced4da; 
+    border-radius: 0.25rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30);
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
+}

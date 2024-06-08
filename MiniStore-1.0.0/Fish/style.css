@@ -1,0 +1,234 @@
+body{
+    font-family: "Kanit", sans-serif;
+    background-color:whitesmoke;
+}
+
+#bienvenida{
+    margin-top: 70px;
+    border: 0.5px;
+    background-color: #2e86c1;
+    border-radius: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    color: whitesmoke;
+}   
+
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #2e86c1;
+    background-color: #2e86c1;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.centro{
+    text-align: center;
+    align-items: center;
+}
+
+.limpio{
+    padding: 0;
+    margin: 0;
+}
+
+.espacio{
+    padding: 10px;
+}
+
+.nav-link{
+    color: whitesmoke;
+    transition: color 0.3s; /* Smooth transition effect */
+}
+
+/* Hover state */
+.nav-link:hover {
+    color: rgb(11, 11, 134); /* Change to desired hover color */
+}
+
+.navbar-toggler {
+    border-color: whitesmoke;
+    margin-right: 20px;
+} 
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#logo{
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#portada{
+    width: 100%;
+    height: auto;
+}
+
+#portadaEnv{
+    margin: 0px;
+    padding: 0px;
+}
+
+#pescados{
+    width: 100%;
+    height: 100.25%;
+}
+
+#enlacePescados{
+    border: 10px solid #2e86c1;
+    display: inline-block;
+    color: #2e86c1;
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #2e86c1;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 20px;
+
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.textoEnlaces{
+    padding-top: 50px;
+    padding-left: 2px;
+    margin-left: 0px;
+}
+
+footer{
+    font-family: "Kanit", sans-serif;
+    color:whitesmoke;
+    background-color: #2e86c1;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.icono{
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.card .imagenTarjetaProduct{
+    height:250px;
+    width: 100%;
+    padding: 0px;
+}
+
+.card-img-left{
+    border-radius: 5px;
+}
+
+.tarjetaProduct{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card{
+    background-color: #91cbf1;
+}
+
+.button-heart {
+    position: absolute; /* Posicionamiento absoluto para el botón */
+    bottom: 15px;
+    right: 15px;
+    background-color: white; /* Fondo blanco */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-heart{
+    height: 30px;
+}
+.card-body {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.card-title{
+    padding-top: 0px;
+}
+#precio{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #003366; /* Azul oscuro */
+        color: #91cbf1; /* Azul más claro */
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
+        top: 260px;
+        right: 10px;
+        font-size: 40px;
+}
+
+#datos{
+    font-size: 20px;
+    background-color: none;
+}
+
+.card-text{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px;
+    text-align: center;
+    background-color: #003366; 
+    color: #91cbf1;
+    border-radius: 20px;
+}

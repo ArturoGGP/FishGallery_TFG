@@ -1,0 +1,7 @@
+.without-color{
+    color:black;
+}
+
+.without-color:hover {
+    color: black;
+  }
