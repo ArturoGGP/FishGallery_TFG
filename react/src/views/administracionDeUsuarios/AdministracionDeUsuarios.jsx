@@ -3,9 +3,17 @@ import axiosClient from "../../axios-client";
 import { Link } from "react-router-dom";
 import './administracionDeUsuarios.css'
 import { obtenerListaUsuarios } from '../../utils/obtencionListados';
-import LazyLoad from 'react-lazy-load';
 
 function AdministracionDeUsuarios() {
+
+    /* Componente AdministracionDeUsuarios en React que maneja la lista de usuarios y su administración.
+    Utiliza React hooks como useState y useEffect para el estado y efectos secundarios.
+    Obtiene la lista de usuarios al montar el componente y cuando se cambia de página.
+    Permite la paginación de la lista de usuarios y la eliminación de usuarios específicos, confirmando la acción antes de proceder.
+    Usa axios para realizar solicitudes HTTP.
+    Incluye un enlace para añadir nuevos usuarios y botones para modificar o eliminar usuarios existentes. */
+
+
     const [listaUsuarios, setListaUsuarios] = useState([]);
     const [cargando, setCargando] = useState(true);
     const [paginaActual, setPaginaActual] = useState(1);

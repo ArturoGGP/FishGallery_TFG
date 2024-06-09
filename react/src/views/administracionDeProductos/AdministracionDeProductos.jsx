@@ -2,9 +2,16 @@ import React, { useEffect, useState } from "react";
 import axiosClient from "../../axios-client";
 import { Link } from "react-router-dom";
 import { obtenerListaProductos, obtenerListaTiposPescado, obtenerListaFormatosVenta, obtenerListaTiposEscamado, obtenerListaPaises } from '../../utils/obtencionListados';
-import LazyLoad from 'react-lazy-load';
 
 function AdministracionDeProductos() {
+
+    /* Componente AdministracionDeProductos en React que maneja la lista de productos y su administración.
+    Utiliza React hooks como useState y useEffect para el estado y efectos secundarios.
+    Obtiene listas de productos, tipos de pescado, formatos de venta, tipos de escamado y países al montar el componente y cuando se cambia de página.
+    Permite la paginación de la lista de productos y la eliminación de productos específicos, confirmando la acción antes de proceder.
+    Usa axios para realizar solicitudes HTTP.
+    Incluye un enlace para añadir nuevos productos y botones para modificar o eliminar productos existentes. */
+
     const [listaProductos, setListaProductos] = useState([]);
     const [listaTiposPescado, setListaTiposPescado] = useState([]);
     const [listaTiposEscamado, setListaTiposEscamados] = useState([]);
@@ -13,15 +20,6 @@ function AdministracionDeProductos() {
     const [cargando, setCargando] = useState(true);
     const [paginaActual, setPaginaActual] = useState(1);
     const [meta, setMeta] = useState({});
-    
-    /*const eliminarProducto = (producto) => {
-        if (!window.confirm("¿Seguro/a que quieres eliminar este usuario?")) {
-            return;
-        }
-        axiosClient.delete(`/productos/${producto.id}`).then(() => {
-            obtenerListaProductos();
-        });
-    };*/
 
     const eliminarProducto = (producto) => {
         if (!window.confirm("¿Seguro/a que quieres eliminar este producto?")) {

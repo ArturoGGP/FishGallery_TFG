@@ -5,6 +5,14 @@ import axiosClient from "../../axios-client";
 import './usuarioForm.css';
 
 function UsuarioForm() {
+
+    /* Componente UsuarioForm en React que maneja el formulario para crear o editar usuarios.
+    Utiliza React hooks como useState y useEffect para el estado y efectos secundarios.
+    Si el componente recibe un ID a través de los parámetros de la URL, carga los datos del usuario correspondiente para edición.
+    El formulario permite enviar los datos, ya sea para crear un nuevo usuario o para actualizar uno existente,
+    usando axios para realizar solicitudes HTTP. Si la operación es exitosa, redirige a la página de administración de usuarios.
+    Incluye validaciones y manejo de errores para asegurar que todos los campos estén completos. */
+
     const navigate = useNavigate();
     const { id } = useParams();
     const [cargando, setCargando] = useState(false);

@@ -5,6 +5,13 @@ import { useEffect } from "react";
 import './menufiltros.css';
 
 function MenuFiltros(props) {
+
+    /* Componente MenuFiltros en React que maneja los filtros de búsqueda para una lista de productos.
+     Utiliza React hooks como useState y useEffect para el estado y efectos secundarios.
+     Obtiene la lista de tipos de pescado al montar el componente.
+     Permite seleccionar un tipo de pescado de un menú desplegable y realizar una búsqueda por nombre.
+     Al cambiar el tipo de pescado o la búsqueda, se llama a las funciones correspondientes pasadas como props para manejar estos cambios en el componente padre. */
+
     const [selectedTipoPescado, setSelectedTipoPescado] = useState("");
     const [busqueda, setBusqueda] = useState("");
     const [listaTiposPescado, setListaTiposPescado] = useState([]);
