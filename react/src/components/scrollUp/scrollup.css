@@ -1,0 +1,17 @@
+.Up{
+    position: fixed; /* Hace que el botón tenga una posición fija */
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    border: none;
+    outline: none; 
+    background-color: lightblue; 
+    color: blue; 
+    padding: 15px; 
+    border-radius: 10px;
+    opacity: 1; 
+    width: 70px;
+    height: 90px;
+    text-align: center;
+    border : 2px solid blue;
+}

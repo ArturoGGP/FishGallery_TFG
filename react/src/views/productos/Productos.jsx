@@ -10,6 +10,7 @@ import "./productos.css";
 import MenuFiltros from "../../components/menuFiltros/MenuFiltros";
 import noResults from "../../assets/noresult.png";
 import LazyLoad from "react-lazy-load";
+import ScrollUp from "../../components/scrollUp/ScrollUp";
 
 function Productos() {
     const [listaProductos, setListaProductos] = useState([]);
@@ -223,6 +224,7 @@ function Productos() {
                         </div>
                     )}
             </div>
+            <ScrollUp />
         </div>
     );
 }
