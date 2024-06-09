@@ -38,21 +38,19 @@ function UsuarioForm() {
                   .then(()=>{
                     navigate('/administarUsuarios')
                   })
-                  /* TODO ERRORS 
-                  .catch(()=>{
-
+                  .catch((error) => {
+                    alert("Rellena todos los campos");
+                    console.error("Error al crear el producto:", error);
                   })
-                  */
       } else {
         axiosClient.post(`/usuarios`, usuario)
                   .then(()=>{
                     navigate('/administarUsuarios')
                   })
-                  /* TODO ERRORS 
-                  .catch(()=>{
-
+                  .catch((error) => {
+                    alert("Rellena todos los campos");
+                    console.error("Error al crear el producto:", error);
                   })
-                  */
       }
     }
 

@@ -45,21 +45,19 @@ function ProductoForm() {
         if (producto.id) {
             axiosClient.put(`/productos/${id}`, producto).then(() => {
                 navigate("/administarProductos");
+            })
+            .catch((error) => {
+                alert("Rellena todos los campos");
+                console.error("Error al crear el producto:", error);
             });
-            /* TODO ERRORS 
-                  .catch(()=>{
-
-                  })
-                  */
         } else {
             axiosClient.post(`/productos`, producto).then(() => {
                 navigate("/administarProductos");
+            })
+            .catch((error) => {
+                alert("Rellena todos los campos");
+                console.error("Error al crear el producto:", error);
             });
-            /* TODO ERRORS 
-                  .catch(()=>{
-
-                  })
-                  */
         }
     }
 
@@ -207,7 +205,7 @@ function ProductoForm() {
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="imagen" className="form-label">Link de imagen</label>
+                                <label htmlFor="imagen" className="form-label">Link de imagen &#40;obligatorio&#41;</label>
                                 <input
                                     type="text"
                                     className="form-control"

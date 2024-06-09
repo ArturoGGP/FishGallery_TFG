@@ -1,0 +1,8 @@
+Hay algunos procesos que obtienen valores del archivo .env
+
+Por ello, habría que copiar los dos .env.example y cambiar el nombre de la copia a .env
+
+Los dos .env.example se encuentran en:
+
+LARAVEL -> /FISHGALLERY_TFG/.env.example
+REACT -> /FISHGALLERY_TFG/react/.env.example
