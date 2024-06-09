@@ -41,31 +41,31 @@ function ContenedorDeImagenes() {
     }, []);
 
     return (
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6">
                     <input
                         type="file"
-                        class="form-control"
+                        className="form-control"
                         onChange={(event) => {
                             setImageUpload(event.target.files[0]);
                         }}
                     />
                 </div>
-                <div class="col-md-6">
-                    <button class="btn btn-primary" onClick={uploadFile}>
+                <div className="col-md-6">
+                    <button className="btn btn-primary" onClick={uploadFile}>
                         Subir
                     </button>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div className="row mt-3">
                 <LazyLoad offset={100}>
                     <div>
                         {imageUrls.map((url, index) => (
-                            <div class="col-md-4 mb-3" key={index}>
+                            <div className="col-md-4 mb-3" key={index}>
                                 <img
                                     src={url}
-                                    class="img-fluid"
+                                    className="img-fluid"
                                     alt={`Image ${index}`}
                                 />
                             </div>
