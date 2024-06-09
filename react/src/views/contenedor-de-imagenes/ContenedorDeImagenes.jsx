@@ -54,7 +54,7 @@ function ContenedorDeImagenes() {
                 </div>
                 <div class="col-md-6">
                     <button class="btn btn-primary" onClick={uploadFile}>
-                        Upload Image
+                        Subir
                     </button>
                 </div>
             </div>

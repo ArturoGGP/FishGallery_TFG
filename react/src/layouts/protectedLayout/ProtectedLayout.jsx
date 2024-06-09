@@ -39,7 +39,7 @@ function ProtectedLayout() {
     // Verifica si el usuario tiene acceso a la ruta de administración
     const hasAccessToAdmin = usuario && usuario.email && emails.includes(usuario.email);
 
-    if (!hasAccessToAdmin && ((window.location.pathname.startsWith('/administarProductos')) || (window.location.pathname.startsWith('/administarUsuarios')) || (window.location.pathname.startsWith('//contenedor-de-imagenes')))) {
+    if (!hasAccessToAdmin && ((window.location.pathname.startsWith('/administarProductos')) || (window.location.pathname.startsWith('/administarUsuarios')) || (window.location.pathname.startsWith('/contenedor-de-imagenes')))) {
         return <Navigate to="/mientorno" />;
     }
 
